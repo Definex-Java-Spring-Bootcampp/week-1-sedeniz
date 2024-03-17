@@ -19,6 +19,8 @@ public class Main {
         Product product2 = new Product("Phone", 10000, "Electronics", 15);
         Product product3 = new Product("Headphones", 1000, "Electronics", 20);
         Product product4 = new Product("Novel", 250, "Book", 30);
+        List<Product> products = new ArrayList<>(Arrays.asList(product1, product2, product3, product4));
+
 
         Order order1 = new Order();
         order1.addProduct(product2);
@@ -72,7 +74,7 @@ public class Main {
                 }
             }
         }
-        System.out.println("1500 TL uzeri faturalar: " + highValueInvoicesCount);
+        System.out.println("1500 TL uzeri fatura sayısı: " + highValueInvoicesCount);
 
     }
 }
